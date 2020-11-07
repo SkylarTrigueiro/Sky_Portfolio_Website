@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Skylar Trigueiro</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="2019 IEEE-CIS Fraud Detection Competition, Hosted by Kaggle">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Skylar Trigueiro">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Fraud Detection</h1>
+    <p class="uk-text-center uk-text-lead">2019 IEEE-CIS Fraud Detection Competition, Hosted by Kaggle</p>
+    <p class="uk-text-center">Published on Oct 04, 2019</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+    
+
+
+
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/SkylarTrigueiro/IEEE_FraudDetection"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
+      </div>
+    </div>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h1 id="ieee-cis-fraud-detection-kaggle-competition">IEEE-CIS Fraud Detection Kaggle Competition</h1>
+<h2 id="overview">Overview</h2>
+<p>For my first Kaggle competition, I developed a model for detecting fraudulent credit/debit card transactions. Teams were asked to submit probability predictions on a provided test set and the winning team was decided based on which team had the submission with the highest ROC-AUC score. I, as a solo competitor, placed 1598 out of 6381 teams with a ROC-AUC score of 0.924103. I accomplished this by creating an ensemble of lightGBM models.</p>
+<h2 id="data">Data</h2>
+<p>The training data is provided in two csv files, &lsquo;train_identity&rsquo; and &lsquo;train_transaction&rsquo;. The following is copied straight out of the description of the variables from the competition organizers:</p>
+<h3 id="transaction-table">Transaction Table</h3>
+<ol>
+<li>TransactionDT: timedelta from a given reference datetime (not an actual timestamp)</li>
+<li>TransactionAMT: transaction payment amount in USD</li>
+<li>ProductCD: product code, the product for each transaction</li>
+<li>card1 - card6: payment card information, such as card type, card category, issue bank, country, etc.</li>
+<li>addr: address</li>
+<li>dist: distance</li>
+<li>P_ and (R__) emaildomain: purchaser and recipient email domain</li>
+<li>C1-C14: counting, such as how many addresses are found to be associated with the payment card, etc. The actual meaning is masked.</li>
+<li>D1-D15: timedelta, such as days between previous transaction, etc.</li>
+<li>M1-M9: match, such as names on card and address, etc.</li>
+<li>Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations.</li>
+</ol>
+<p>Categorical Features:</p>
+<ol>
+<li>ProductCD</li>
+<li>card1 - card6</li>
+<li>addr1, addr2</li>
+<li>Pemaildomain Remaildomain</li>
+<li>M1 - M9</li>
+</ol>
+<h3 id="identity-table">Identity Table</h3>
+<p>Variables in this table are identity information – network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions.
+They&rsquo;re collected by Vesta’s fraud protection system and digital security partners.
+(The field names are masked and pairwise dictionary will not be provided for privacy protection and contract agreement)</p>
+<p>Categorical Features:</p>
+<ol>
+<li>DeviceType</li>
+<li>DeviceInfo</li>
+<li>id12 - id38</li>
+</ol>
+<h3 id="eda-summary">EDA Summary</h3>
+<p>Not a lot of data is provided about how the data was generated. User IDs are not provided to preserve anonymity, but . The training data and the submission data take place over approximately a year of transactions with a month missing in between the training and submission. The following plot highlights the distribution of transactions from the training data and the test data where the public and private portion of the leaderboard starts.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604617378/Website%20Project%20Photos/2019%20IEEE-CIS%20Fraud%20Detection%20hosted%20by%20Kaggle/train_test_pup_test_priv_koigaf.png" alt="Homepage Screenshot" title="Homepage Screenshot"></p>
+<p>No dates are given, just time measured in seconds. It&rsquo;s possible to infer the dates and a lot of Kagglers believe that the spike in transactions towards the beginning implies that the first month is December and that the spike is</p>
+<p>Based on the following table, we can quickly see that there is an imbalance between the number of fraudulent versus legitimate transactions.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Count</th>
+<th>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fraud</td>
+<td>569877</td>
+<td>96.5</td>
+</tr>
+<tr>
+<td>Legitimate</td>
+<td>20663</td>
+<td>3.5</td>
+</tr>
+</tbody>
+</table>
+<p>One of the most important features for determing fraudulent transactions is the transaction amount. The following plot shows Transaction Amount over time.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604617375/Website%20Project%20Photos/2019%20IEEE-CIS%20Fraud%20Detection%20hosted%20by%20Kaggle/train_transactionAmt_beoazf.png" alt="About Screenshot" title="About Screenshot"></p>
+<h2 id="references">References</h2>
+<ol>
+<li>The following EDA notebook was used as a reference for a lot of my decision making:</li>
+</ol>
+<p><a href="https://www.kaggle.com/alijs1/ieee-transaction-columns-reference">https://www.kaggle.com/alijs1/ieee-transaction-columns-reference</a></p>
+<p>The creator of this notebook goes by the username &lsquo;alijs&rsquo; on Kaggle. His profile can be found here. <a href="https://www.kaggle.com/alijs1">https://www.kaggle.com/alijs1</a></p>
+<ol start="2">
+<li>The following web scraper was used and written by &lsquo;Tony321&rsquo; with kaggle profile <a href="https://www.kaggle.com/tony321">https://www.kaggle.com/tony321</a></li>
+</ol>
+<p><a href="https://www.kaggle.com/tony321/almost-all-devices-info-usage-with-web-scraping?select=model_and_specs_info.joblib">https://www.kaggle.com/tony321/almost-all-devices-info-usage-with-web-scraping?select=model_and_specs_info.joblib</a></p>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:Skylar.Trigueiro@gmail.com">Skylar.Trigueiro@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+                  <div uk-lightbox>
+                    <a href="https://www.google.com/maps/place/San&#43;Francisco&#43;Bay&#43;Area,&#43;CA/@37.8738836,-123.5414908,8z/data=!3m1!4b1!4m5!3m4!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078" data-caption="San Francisco Bay Area, CA"
+                      data-type="iframe">San Francisco Bay Area, CA</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+    2020
+    Skylar Trigueiro
+
+
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

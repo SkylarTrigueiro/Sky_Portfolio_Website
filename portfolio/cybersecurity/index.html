@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Skylar Trigueiro</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="Tensorflow artificial neural network trained to identify cyber attacks over a wifi network.">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Skylar Trigueiro">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Network Cyber Attack Classifier</h1>
+    <p class="uk-text-center uk-text-lead">Tensorflow artificial neural network trained to identify cyber attacks over a wifi network.</p>
+    <p class="uk-text-center">Published on Mar 12, 2020</p>
+    <p class="uk-text-center">Reading time: 4 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+    
+
+
+
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/SkylarTrigueiro/IEEE_FraudDetection"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
+      </div>
+    </div>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h2 id="overview">Overview</h2>
+<p>The goal of this project is to develop a classifier to detect cyber attacks over a wifi network. Since the cost of incorrectly classifying normal activity as a cyber attack is less than the cost of classifying a cyber attack as normal activity, then I will favor the model which has a higher recall percentage in cyber attack categories.</p>
+<h2 id="data">Data</h2>
+<p>The data from this project is sourced from the AWID project (<a href="http://icsdweb.aegean.gr/awid/index.html)">http://icsdweb.aegean.gr/awid/index.html)</a>. If you would like to use this data, please go to their website and ask for permission. The data is broken up into 4 different data sets, A larger data set (F) and a reduced version (R). For each dataset size, there is one that generalizes wifi activity into those mentioned earlier (CLS) and one that has more differentiation for each type of cyber attack (ATK). I will be focusing on the reduced dataset with more generalized classes for this project.</p>
+<p>The distribution of the target classes in the trainind data is imbalanced and is as follows:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Normal</th>
+<th>Injection</th>
+<th>Impersonation</th>
+<th>Flooding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distribution</td>
+<td>91.0%</td>
+<td>3.6%</td>
+<td>2.7%</td>
+<td>2.7%</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>1,633,189</td>
+<td>65,379</td>
+<td>48,522</td>
+<td>48,484</td>
+</tr>
+</tbody>
+</table>
+<p>and in the test data the distribution is:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Normal</th>
+<th>Injection</th>
+<th>Impersonation</th>
+<th>Flooding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distribution</td>
+<td>92.2%</td>
+<td>2.9%</td>
+<td>3.5%</td>
+<td>1.4%</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>530,784</td>
+<td>16,682</td>
+<td>20,079</td>
+<td>8,097</td>
+</tr>
+</tbody>
+</table>
+<p>To address the imbalance of the data set, I will apply downsampling until the count of &lsquo;normal&rsquo; targets is the same as average of the counts of the other targets.</p>
+<p>As the goal is to predict future cyber attacks, I need to examine the distribution of cyber attacks over time of the training and test data. The training data is recorded over an hour, 3600 seconds, and the following plot shows the distribution of the time deltas of traffic.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604630884/Website%20Project%20Photos/awidCyberSecurity/train_jfnafg.png" alt="Training Data" title="Training Data"></p>
+<p>and the following plot shows test set, which takes place over 20 minutes or 1200 seconds.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604630883/Website%20Project%20Photos/awidCyberSecurity/test_ykmksq.png" alt="Test Data" title="Test Data"></p>
+<p>Note that the distribution of the target values is time dependent and the cyber attacks occur in clusters. If we combine the train and test data, we can see how far apart in time they were recorded.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604630883/Website%20Project%20Photos/awidCyberSecurity/train_test_esc1rk.png" alt="Train/Test Data" title="Train/Test Data"></p>
+<h2 id="data-pre-processing">Data pre-processing</h2>
+<p>For the preprocessing phase I have done the following</p>
+<ul>
+<li>Replaced missing values in categorcial features with the label &lsquo;missing&rsquo;</li>
+<li>Created an aggregated count and rate of change of count feature on identity labels over 1 second intervals.</li>
+<li>Created a rare label for labels that appear less than 0.01% of the time.</li>
+<li>Replaced missing values in numeric features with -999</li>
+<li>Created numbered labels for all categorical labels.</li>
+<li>Feature selection includes removing constant features, quasi-constant features (features where 99% of the values are the same), and correlated features where the correlation is 80% or more.</li>
+</ul>
+<p>Since the data set is massive and cyber attacks are so rare relative to normal activity, I decided to use downsampling until normal traffic was equal to the average count of the other types of cyber attacks. The downsampling took place after my features were created so that the aggregated counts would not be effected.</p>
+<h2 id="model-selection">Model Selection</h2>
+<p>So far I have tried using xgboost and artificial neural networks from tensorflow 2.0 to tackle this problem. My best results have come from artificial neural networks using very few epochs to reduce overfitting on the training data.</p>
+<h2 id="cross-validation">Cross-validation</h2>
+<p>I have not yet discovered any type of cross-validation that I have found to be useful for this data set. The cyber attacks have taken place in clusters over the span of the training data and there are only a few cluster of attacks for each type of cyber attack. A time series cross-validation feels like the best approach for this type of problem since the focus is on predicting cyber attacks in the future. However since many of the cross-validation sets do not contain some cyber attacks, then the results of the cross-validation are spoiled due to poor quality training data. On the other hand, picking rows at random for my cross-validation sets means that each set contains points from each cluster of cyber attacks and results in very high performance on the training sets but very poor performance on the test set. Therefore, I am using the provided train and test set until I can find a better solution. I still believe that the time-series cross-validation makes the most sense and that the problems it has will disappear when I switch to working on the larger dataset, which should contain more clusters of cyber attacks.</p>
+<h2 id="results">Results</h2>
+<p>My best performing model is the artificial neural network using tensorflow 2.0. Using this model I achieved an accuracy of only 75%, but I achieved a recall of 83%. The following table and confusion matrix summarizes the results of the ANN first on the training set:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flooding</td>
+<td>0.95</td>
+<td>1.00</td>
+<td>0.97</td>
+<td>48484</td>
+</tr>
+<tr>
+<td>impersonation</td>
+<td>0.22</td>
+<td>1.00</td>
+<td>0.36</td>
+<td>48522</td>
+</tr>
+<tr>
+<td>injection</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>65379</td>
+</tr>
+<tr>
+<td>normal</td>
+<td>1.00</td>
+<td>0.89</td>
+<td>0.94</td>
+<td>1633189</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.90</td>
+<td>1795574</td>
+</tr>
+<tr>
+<td>macro avg</td>
+<td>0.79</td>
+<td>0.97</td>
+<td>0.82</td>
+<td>1795574</td>
+</tr>
+<tr>
+<td>weighted avg</td>
+<td>0.98</td>
+<td>0.90</td>
+<td>0.93</td>
+<td>1795574</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604630882/Website%20Project%20Photos/awidCyberSecurity/confusion_matrix_train_s2wrjt.png" alt="Training Data Confusion Matrix" title="Training Data Confusion Matrix"></p>
+<p>and the following table and confusion matrix summarizes the model&rsquo;s performance on the test set:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flooding</td>
+<td>0.84</td>
+<td>0.61</td>
+<td>0.70</td>
+<td>8097</td>
+</tr>
+<tr>
+<td>impersonation</td>
+<td>0.13</td>
+<td>0.97</td>
+<td>0.22</td>
+<td>20079</td>
+</tr>
+<tr>
+<td>injection</td>
+<td>0.84</td>
+<td>0.99</td>
+<td>0.91</td>
+<td>16682</td>
+</tr>
+<tr>
+<td>normal</td>
+<td>0.99</td>
+<td>0.74</td>
+<td>0.85</td>
+<td>530784</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.75</td>
+<td>575642</td>
+</tr>
+<tr>
+<td>macro avg</td>
+<td>0.70</td>
+<td>0.83</td>
+<td>0.67</td>
+<td>575642</td>
+</tr>
+<tr>
+<td>weighted avg</td>
+<td>0.96</td>
+<td>0.75</td>
+<td>0.82</td>
+<td>575642</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604630882/Website%20Project%20Photos/awidCyberSecurity/confusion_matrix_test_i3ciwv.png" alt="Test Data Confusion Matrix" title="Test Data Confusion Matrix"></p>
+<p>The noteworthy performance is on injection and impersonation where I scored a 99% and 97% in recall. These results might seem poor, but keep in mind that the cost of asking a user to verify their information again is much lower than the cost of having your network accessed by an intruder.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>The EDA visualizations code originally came from the following Kaggle notebook for
+a binary classification problem. I&rsquo;ve made some modifications to the code for this problem.
+<a href="https://www.kaggle.com/alijs1/ieee-transaction-columns-reference">https://www.kaggle.com/alijs1/ieee-transaction-columns-reference</a></li>
+</ol>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:Skylar.Trigueiro@gmail.com">Skylar.Trigueiro@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+                  <div uk-lightbox>
+                    <a href="https://www.google.com/maps/place/San&#43;Francisco&#43;Bay&#43;Area,&#43;CA/@37.8738836,-123.5414908,8z/data=!3m1!4b1!4m5!3m4!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078" data-caption="San Francisco Bay Area, CA"
+                      data-type="iframe">San Francisco Bay Area, CA</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+    2020
+    Skylar Trigueiro
+
+
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

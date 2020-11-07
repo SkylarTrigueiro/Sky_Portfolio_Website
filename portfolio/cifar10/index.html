@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Skylar Trigueiro</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="Tensorflow Convolutional Neural Network trained to classify Cifar10 images.">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Skylar Trigueiro">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Multi-Image Claissifier, Cifar 10</h1>
+    <p class="uk-text-center uk-text-lead">Tensorflow Convolutional Neural Network trained to classify Cifar10 images.</p>
+    <p class="uk-text-center">Published on Nov 11, 2019</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+    
+
+
+
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/SkylarTrigueiro/Cifar-ImageClassification"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
+      </div>
+    </div>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h1 id="cifar-image-classification">Cifar-Image Classification</h1>
+<h2 id="overview">Overview</h2>
+<p>In this notebook I am creating an image classifier for the Cifar10 dataset which has an accuracy, precision, and recall of 91%. The Cifar10 dataset consists of 60k 32x32 pixel photos, of which 50k in the training set and 10k were used in the test set. The images are of:</p>
+<ol start="0">
+<li>airplanes</li>
+<li>automobiles</li>
+<li>birds</li>
+<li>cats</li>
+<li>deer</li>
+<li>dogs</li>
+<li>frogs</li>
+<li>horses</li>
+<li>ships</li>
+<li>trucks</li>
+</ol>
+<p>I&rsquo;m accomplishing this by using a convolutional neural network with a custom architecture. The choices made for the architecture are explored in the notebook &ldquo;Cifar_10_Choosing_CNN_Architecture.ipynb&rdquo;. Then I take an ensemble of 15 of these convolutional neural networks.</p>
+<h2 id="data">Data</h2>
+<p>The data can be found inside the tensorflow package, tensorflow.keras.datasets.cifar10.load_data(). It contains 60k 32x32 pixel images in color. What makes this a challenging dataset to train on is the resolution of the images is low and the targets are broad categories where a person might have some difficulty identifying what&rsquo;s in the image due to the orientation/angle/perspective/portion of the object. Here is a sample of the photos for consideration:</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604621661/Website%20Project%20Photos/Cifar10/train_qnr0hh.png" alt="Data Sample" title="Data Sample"></p>
+<p>Prepcrocessing this data set consisted of dividing the images by 255 so that the values lied in the interval 0 to 1.</p>
+<h2 id="model">Model</h2>
+<p>For this problem, I used an ensemble of 15 convolutional neural networks.</p>
+<h2 id="results">Results</h2>
+<p>The following table and confusion matrix summarizes the results of the ensemble of
+cnn models:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>airplanes</td>
+<td>0.92</td>
+<td>0.93</td>
+<td>0.92</td>
+<td>981</td>
+</tr>
+<tr>
+<td>automobiles</td>
+<td>0.98</td>
+<td>0.93</td>
+<td>0.96</td>
+<td>1041</td>
+</tr>
+<tr>
+<td>birds</td>
+<td>0.88</td>
+<td>0.90</td>
+<td>0.89</td>
+<td>967</td>
+</tr>
+<tr>
+<td>cats</td>
+<td>0.78</td>
+<td>0.87</td>
+<td>0.89</td>
+<td>895</td>
+</tr>
+<tr>
+<td>deer</td>
+<td>0.91</td>
+<td>0.90</td>
+<td>0.90</td>
+<td>1005</td>
+</tr>
+<tr>
+<td>dogs</td>
+<td>0.83</td>
+<td>0.92</td>
+<td>0.87</td>
+<td>901</td>
+</tr>
+<tr>
+<td>frogs</td>
+<td>0.98</td>
+<td>0.84</td>
+<td>0.91</td>
+<td>1159</td>
+</tr>
+<tr>
+<td>horses</td>
+<td>0.95</td>
+<td>0.95</td>
+<td>0.95</td>
+<td>1005</td>
+</tr>
+<tr>
+<td>ships</td>
+<td>0.96</td>
+<td>0.95</td>
+<td>0.96</td>
+<td>1010</td>
+</tr>
+<tr>
+<td>trucks</td>
+<td>0.95</td>
+<td>0.92</td>
+<td>0.94</td>
+<td>1036</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>accuracy</td>
+<td></td>
+<td></td>
+<td>0.91</td>
+<td>10000</td>
+</tr>
+<tr>
+<td>macro avg</td>
+<td>0.91</td>
+<td>0.91</td>
+<td>0.91</td>
+<td>10000</td>
+</tr>
+<tr>
+<td>weighted avg</td>
+<td>0.92</td>
+<td>0.91</td>
+<td>0.91</td>
+<td>10000</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1604621656/Website%20Project%20Photos/Cifar10/confusion_matrix_gnj6kp.png" alt="Confusion Matrix" title="Confusion Matrix"></p>
+<p>According to <a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html,">http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html,</a> the results of this model are competititive with research papers puplished in 2014-2015</p>
+<h2 id="references">References</h2>
+<ol>
+<li>The methodology for designing the CNN architecture for the Cifar10 dataset
+was based on the github tutorial by Chris Deotte&rsquo;s MNIST notebook on Kaggle:
+<a href="https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist">https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist</a></li>
+</ol>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:Skylar.Trigueiro@gmail.com">Skylar.Trigueiro@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+                  <div uk-lightbox>
+                    <a href="https://www.google.com/maps/place/San&#43;Francisco&#43;Bay&#43;Area,&#43;CA/@37.8738836,-123.5414908,8z/data=!3m1!4b1!4m5!3m4!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078" data-caption="San Francisco Bay Area, CA"
+                      data-type="iframe">San Francisco Bay Area, CA</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+    2020
+    Skylar Trigueiro
+
+
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

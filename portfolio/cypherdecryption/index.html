@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Skylar Trigueiro</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="Genentic trigram algorithm trained to decypher simple ciphers.">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Skylar Trigueiro">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/Sky_Portfolio_Website/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/Sky_Portfolio_Website/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/Sky_Portfolio_Website/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Cipher Decryption</h1>
+    <p class="uk-text-center uk-text-lead">Genentic trigram algorithm trained to decypher simple ciphers.</p>
+    <p class="uk-text-center">Published on Jun 19, 2020</p>
+    <p class="uk-text-center">Reading time: 1 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+    
+
+
+
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/SkylarTrigueiro/cipherDecryption"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
+      </div>
+    </div>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h1 id="cipher-decryption">Cipher Decryption</h1>
+<p>Please see the github respository for more details about the model.</p>
+<h2 id="overview">Overview</h2>
+<p>In this project I am building a cipher decrypter for simple ciphers in the english language. An example of a simple cipher would be map of the form:</p>
+<p>{a:b, b:c, c:d, &hellip;, z:a}</p>
+<p>so that the message &ldquo;abc&rdquo; is transformed into &ldquo;bcd&rdquo;. To solve this problem, I will be building a genetic trigram model. I decided to use a trigram model instead of a bigram model because &ldquo;qu&rdquo; is more common than &ldquo;ju&rdquo; and so words that should be decrypted into &ldquo;just&rdquo; turn into &ldquo;qust&rdquo; because of &ldquo;qu&rdquo; being more likely. Having a trigram model fixes this issue since &ldquo;jus&rdquo; is much more comman than &ldquo;qus&rdquo;.</p>
+<h2 id="data">Data</h2>
+<p>The data that the model is trained by reading the book &ldquo;Moby-Dick; or, The Whale&rdquo; by Herman Melville (link, <a href="https://www.gutenberg.org/ebooks/2701)">https://www.gutenberg.org/ebooks/2701)</a>. To test algorithm, I encoded a passage from the book &ldquo;The Adventures of Sherlock Holmes&rdquo;, by Arthur Conan Doyle (link: <a href="https://www.gutenberg.org/ebooks/1661">https://www.gutenberg.org/ebooks/1661</a>) and had the model attempt to decrypt the cipher.</p>
+<h2 id="results-and-further-improvements">Results and Further Improvements</h2>
+<p>90% of the time, the correct cipher is discovered. However, the model occasionally fails to converge to the correct cipher after a fixed number of iterations. In this case, the algorithm appears to be stuck in some local minimum and no perturbation ever causes. My only solution would be to come up with some general rule for restarting the algorithm until a more reasonable score is achieved. However, since the algorithm converges for the most part on it&rsquo;s own, then I&rsquo;m going to leave it as is for now.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>This project is an extension of a project in the udemy course &ldquo;Data Science: Natural Language Processing (NLP) in Python&rdquo;</li>
+</ol>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:Skylar.Trigueiro@gmail.com">Skylar.Trigueiro@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+                  <div uk-lightbox>
+                    <a href="https://www.google.com/maps/place/San&#43;Francisco&#43;Bay&#43;Area,&#43;CA/@37.8738836,-123.5414908,8z/data=!3m1!4b1!4m5!3m4!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078" data-caption="San Francisco Bay Area, CA"
+                      data-type="iframe">San Francisco Bay Area, CA</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+    2020
+    Skylar Trigueiro
+
+
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

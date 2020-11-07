@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skylar Trigueiro&#39; Website on Skylar Trigueiro</title>
+    <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/</link>
+    <description>Recent content in Skylar Trigueiro&#39; Website on Skylar Trigueiro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Facial Recognition (Work in Progress)</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/facialrecognition/</link>
+      <pubDate>Mon, 19 Oct 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/facialrecognition/</guid>
+      <description>Facial Recognition (Work in progress) This project is about training a Siamese neural network to determine if two photos are of the same person.
+Data The data used to train the model is the &amp;ldquo;Yale Face Databse&amp;rdquo; which can be found at http://vision.ucsd.edu/content/yale-face-database
+References 1.This project started as a project in the Udemy course &amp;ldquo;Pytorch: Deep Learning and Artificial Intelligence&amp;rdquo;, which I highly recommend.</description>
+    </item>
+    
+    <item>
+      <title>Cipher Decryption</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cypherdecryption/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cypherdecryption/</guid>
+      <description>Cipher Decryption Please see the github respository for more details about the model.
+Overview In this project I am building a cipher decrypter for simple ciphers in the english language. An example of a simple cipher would be map of the form:
+{a:b, b:c, c:d, &amp;hellip;, z:a}
+so that the message &amp;ldquo;abc&amp;rdquo; is transformed into &amp;ldquo;bcd&amp;rdquo;. To solve this problem, I will be building a genetic trigram model. I decided to use a trigram model instead of a bigram model because &amp;ldquo;qu&amp;rdquo; is more common than &amp;ldquo;ju&amp;rdquo; and so words that should be decrypted into &amp;ldquo;just&amp;rdquo; turn into &amp;ldquo;qust&amp;rdquo; because of &amp;ldquo;qu&amp;rdquo; being more likely.</description>
+    </item>
+    
+    <item>
+      <title>Network Cyber Attack Classifier</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cybersecurity/</link>
+      <pubDate>Thu, 12 Mar 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cybersecurity/</guid>
+      <description>Overview The goal of this project is to develop a classifier to detect cyber attacks over a wifi network. Since the cost of incorrectly classifying normal activity as a cyber attack is less than the cost of classifying a cyber attack as normal activity, then I will favor the model which has a higher recall percentage in cyber attack categories.
+Data The data from this project is sourced from the AWID project (http://icsdweb.</description>
+    </item>
+    
+    <item>
+      <title>Making a new Website</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/blog/first-blog/</link>
+      <pubDate>Tue, 31 Dec 2019 12:14:34 +0600</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/blog/first-blog/</guid>
+      <description>For a long time this website has had a couple of links to contact me, but those days are over.
+Now I have a brand new Hugo website with a custom written theme complete with
+ A homepage with more social links, and description of my skills An about page with description of who I am A portfolio page to showcase all my projects A blog  Why Hugo? The first question is why a site builder?</description>
+    </item>
+    
+    <item>
+      <title>Multi-Image Claissifier, Cifar 10</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cifar10/</link>
+      <pubDate>Mon, 11 Nov 2019 23:00:00 +0000</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cifar10/</guid>
+      <description>Cifar-Image Classification Overview In this notebook I am creating an image classifier for the Cifar10 dataset which has an accuracy, precision, and recall of 91%. The Cifar10 dataset consists of 60k 32x32 pixel photos, of which 50k in the training set and 10k were used in the test set. The images are of:
+airplanes automobiles birds cats deer dogs frogs horses ships trucks  I&amp;rsquo;m accomplishing this by using a convolutional neural network with a custom architecture.</description>
+    </item>
+    
+    <item>
+      <title>Fraud Detection</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/kagglefrauddetection/</link>
+      <pubDate>Fri, 04 Oct 2019 23:00:00 +0000</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/kagglefrauddetection/</guid>
+      <description>IEEE-CIS Fraud Detection Kaggle Competition Overview For my first Kaggle competition, I developed a model for detecting fraudulent credit/debit card transactions. Teams were asked to submit probability predictions on a provided test set and the winning team was decided based on which team had the submission with the highest ROC-AUC score. I, as a solo competitor, placed 1598 out of 6381 teams with a ROC-AUC score of 0.924103. I accomplished this by creating an ensemble of lightGBM models.</description>
+    </item>
+    
+  </channel>
+</rss>

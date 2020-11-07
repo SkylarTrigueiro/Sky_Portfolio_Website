@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nlp on Skylar Trigueiro</title>
+    <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/categories/nlp/</link>
+    <description>Recent content in nlp on Skylar Trigueiro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate><atom:link href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/categories/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cipher Decryption</title>
+      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cypherdecryption/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cypherdecryption/</guid>
+      <description>Cipher Decryption Please see the github respository for more details about the model.
+Overview In this project I am building a cipher decrypter for simple ciphers in the english language. An example of a simple cipher would be map of the form:
+{a:b, b:c, c:d, &amp;hellip;, z:a}
+so that the message &amp;ldquo;abc&amp;rdquo; is transformed into &amp;ldquo;bcd&amp;rdquo;. To solve this problem, I will be building a genetic trigram model. I decided to use a trigram model instead of a bigram model because &amp;ldquo;qu&amp;rdquo; is more common than &amp;ldquo;ju&amp;rdquo; and so words that should be decrypted into &amp;ldquo;just&amp;rdquo; turn into &amp;ldquo;qust&amp;rdquo; because of &amp;ldquo;qu&amp;rdquo; being more likely.</description>
+    </item>
+    
+  </channel>
+</rss>
