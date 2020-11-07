@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Skylar Trigueiro</title>
-    <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/tags/</link>
+    <link>skylartrigueiro.com/tags/</link>
     <description>Recent content in Tags on Skylar Trigueiro</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="skylartrigueiro.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

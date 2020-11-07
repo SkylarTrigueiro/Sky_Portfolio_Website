@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nlp on Skylar Trigueiro</title>
-    <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/categories/nlp/</link>
+    <link>skylartrigueiro.com/categories/nlp/</link>
     <description>Recent content in nlp on Skylar Trigueiro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate><atom:link href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/categories/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate><atom:link href="skylartrigueiro.com/categories/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cipher Decryption</title>
-      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cypherdecryption/</link>
+      <link>skylartrigueiro.com/portfolio/cypherdecryption/</link>
       <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
       
-      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cypherdecryption/</guid>
+      <guid>skylartrigueiro.com/portfolio/cypherdecryption/</guid>
       <description>Cipher Decryption Please see the github respository for more details about the model.
 Overview In this project I am building a cipher decrypter for simple ciphers in the english language. An example of a simple cipher would be map of the form:
 {a:b, b:c, c:d, &amp;hellip;, z:a}

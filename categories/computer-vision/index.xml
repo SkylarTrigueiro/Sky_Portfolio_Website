@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>computer-vision on Skylar Trigueiro</title>
-    <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/categories/computer-vision/</link>
+    <link>skylartrigueiro.com/categories/computer-vision/</link>
     <description>Recent content in computer-vision on Skylar Trigueiro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 19 Oct 2020 23:00:00 +0000</lastBuildDate><atom:link href="https://skylartrigueiro.github.io/Sky_Portfolio_Website/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 23:00:00 +0000</lastBuildDate><atom:link href="skylartrigueiro.com/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Facial Recognition (Work in Progress)</title>
-      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/facialrecognition/</link>
+      <link>skylartrigueiro.com/portfolio/facialrecognition/</link>
       <pubDate>Mon, 19 Oct 2020 23:00:00 +0000</pubDate>
       
-      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/facialrecognition/</guid>
+      <guid>skylartrigueiro.com/portfolio/facialrecognition/</guid>
       <description>Facial Recognition (Work in progress) This project is about training a Siamese neural network to determine if two photos are of the same person.
 Data The data used to train the model is the &amp;ldquo;Yale Face Databse&amp;rdquo; which can be found at http://vision.ucsd.edu/content/yale-face-database
 References 1.This project started as a project in the Udemy course &amp;ldquo;Pytorch: Deep Learning and Artificial Intelligence&amp;rdquo;, which I highly recommend.</description>
@@ -20,10 +20,10 @@ References 1.This project started as a project in the Udemy course &amp;ldquo;Py
     
     <item>
       <title>Multi-Image Claissifier, Cifar 10</title>
-      <link>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cifar10/</link>
+      <link>skylartrigueiro.com/portfolio/cifar10/</link>
       <pubDate>Mon, 11 Nov 2019 23:00:00 +0000</pubDate>
       
-      <guid>https://skylartrigueiro.github.io/Sky_Portfolio_Website/portfolio/cifar10/</guid>
+      <guid>skylartrigueiro.com/portfolio/cifar10/</guid>
       <description>Cifar-Image Classification Overview In this notebook I am creating an image classifier for the Cifar10 dataset which has an accuracy, precision, and recall of 91%. The Cifar10 dataset consists of 60k 32x32 pixel photos, of which 50k in the training set and 10k were used in the test set. The images are of:
 airplanes automobiles birds cats deer dogs frogs horses ships trucks  I&amp;rsquo;m accomplishing this by using a convolutional neural network with a custom architecture.</description>
     </item>
