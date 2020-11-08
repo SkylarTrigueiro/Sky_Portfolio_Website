@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Skylar Trigueiro</title>
-    <link>skylartrigueiro.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Skylar Trigueiro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 19 Oct 2020 23:00:00 +0000</lastBuildDate><atom:link href="skylartrigueiro.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 23:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>classification</title>
-      <link>skylartrigueiro.com/categories/classification/</link>
+      <link>/categories/classification/</link>
       <pubDate>Mon, 19 Oct 2020 23:00:00 +0000</pubDate>
       
-      <guid>skylartrigueiro.com/categories/classification/</guid>
+      <guid>/categories/classification/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer-vision</title>
-      <link>skylartrigueiro.com/categories/computer-vision/</link>
+      <link>/categories/computer-vision/</link>
       <pubDate>Mon, 19 Oct 2020 23:00:00 +0000</pubDate>
       
-      <guid>skylartrigueiro.com/categories/computer-vision/</guid>
+      <guid>/categories/computer-vision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nlp</title>
-      <link>skylartrigueiro.com/categories/nlp/</link>
+      <link>/categories/nlp/</link>
       <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
       
-      <guid>skylartrigueiro.com/categories/nlp/</guid>
+      <guid>/categories/nlp/</guid>
       <description></description>
     </item>
     

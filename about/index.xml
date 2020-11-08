@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Skylar Trigueiro</title>
-    <link>skylartrigueiro.com/about/</link>
+    <link>/about/</link>
     <description>Recent content in About on Skylar Trigueiro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="skylartrigueiro.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
