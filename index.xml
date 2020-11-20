@@ -8,6 +8,16 @@
     <language>en-gb</language>
     <lastBuildDate>Thu, 19 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Stock Algorithmic Trading (Work in Progress)</title>
+      <link>/portfolio/algorithmictrading/</link>
+      <pubDate>Thu, 19 Nov 2020 23:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/algorithmictrading/</guid>
+      <description>Algorithmic Trading (Work in progress) This project is about trying to develop an intelligent way of following stock market trends to improve returns compared to buying and holding onto stock. I will specifically try to maximize returns from the S&amp;amp;P 500.
+Data I will use the performance of large market cap companies contained in the S&amp;amp;P 500 order to assist in trend prediction. To gather data for all of the stock I need, I used a web scraper to scrape the wikipedia page of the S&amp;amp;P 500 and the python package yfinance to collect financial data and recover the adjusted closing price for a user defined range of dates that can be defined in config.</description>
+    </item>
+    
+    <item>
       <title>Facial Recognition (Work in Progress)</title>
       <link>/portfolio/facialrecognition/</link>
       <pubDate>Mon, 19 Oct 2020 23:00:00 +0000</pubDate>
@@ -15,7 +25,7 @@
       <guid>/portfolio/facialrecognition/</guid>
       <description>Facial Recognition (Work in progress) This project is about training a Siamese neural network to determine if two photos are of the same person.
 Data The data used to train the model is the &amp;ldquo;Yale Face Databse&amp;rdquo; which can be found at http://vision.ucsd.edu/content/yale-face-database
-References 1.This project started as a project in the Udemy course &amp;ldquo;Pytorch: Deep Learning and Artificial Intelligence&amp;rdquo;, which I highly recommend.</description>
+References  This project started as a project in the Udemy course &amp;ldquo;Pytorch: Deep Learning and Artificial Intelligence&amp;rdquo;, which I highly recommend.  </description>
     </item>
     
     <item>

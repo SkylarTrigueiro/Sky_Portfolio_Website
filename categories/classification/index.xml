@@ -15,7 +15,7 @@
       <guid>/portfolio/facialrecognition/</guid>
       <description>Facial Recognition (Work in progress) This project is about training a Siamese neural network to determine if two photos are of the same person.
 Data The data used to train the model is the &amp;ldquo;Yale Face Databse&amp;rdquo; which can be found at http://vision.ucsd.edu/content/yale-face-database
-References 1.This project started as a project in the Udemy course &amp;ldquo;Pytorch: Deep Learning and Artificial Intelligence&amp;rdquo;, which I highly recommend.</description>
+References  This project started as a project in the Udemy course &amp;ldquo;Pytorch: Deep Learning and Artificial Intelligence&amp;rdquo;, which I highly recommend.  </description>
     </item>
     
     <item>
