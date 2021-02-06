@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>Skylar Trigueiro</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="Explore hiring patterns from 2015 through 2020 and how those patterns have changed due to COVID-19.">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Skylar Trigueiro">
+  <meta name="generator" content="Hugo 0.76.5" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"></a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/">Home</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/portfolio">Portfolio</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/contact">Contact</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href=""></a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/">Home</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">COVID-19 Disruption of Data Science Hiring</h1>
+    <p class="uk-text-center uk-text-lead">Explore hiring patterns from 2015 through 2020 and how those patterns have changed due to COVID-19.</p>
+    <p class="uk-text-center">Published on Feb 05, 2021</p>
+    <p class="uk-text-center">Reading time: 9 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+    
+
+
+
+      <div>
+        
+        <a class="uk-button uk-button-default" href="https://github.com/SkylarTrigueiro/dataScienceHiringPatterns"> <span uk-icon="icon: github"></span>
+          Github</a>
+        
+      </div>
+    </div>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#Data">Data</a></li>
+<li><a href="#Job-Growth">Job Growth</a></li>
+<li><a href="#Salary">Salary</a></li>
+<li><a href="#Locations">Locations</a></li>
+<li><a href="#Big-Companies">Big Companies</a></li>
+<li><a href="#2020-Projections">2020 Projections</a></li>
+<li><a href="#Conclusion">Conclusion</a></li>
+<li><a href="#References">References</a></li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>This project has two purposes. First, I would like to see what effect COVID-19 has had on data science job hiring in 2020. Second, I would like to gather some insight on when and where recent graduates should look in order to get their first job.</p>
+<h2 id="data">Data</h2>
+<p>The data for this project was scraped from the website h1bdata.info using a webscraper that can be found on the following github page: <a href="https://github.com/mingen-pan/Scraping-H1B-visa-info">https://github.com/mingen-pan/Scraping-H1B-visa-info</a> (Thank you Mingen Pan!). The data consists of an individual&rsquo;s employer, location by state and city, salary, and the date that the offer was submitted.</p>
+<h2 id="job-growth">Job Growth</h2>
+<p>In this section, we will explore how job growth for data science has changed over time and where to look for jobs by state. To start our exploration we will start with the following plot that shows the number of jobs filled by year and quarter.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237370/Website%20Project%20Photos/dataScienceHiringPatterns/barChartJobsFilledByYearAndQuarter_t9rk7o.png" alt="" title="bar 1"></p>
+<p>Ignoring the year 2020 for now, you&rsquo;ll notice that hiring spikes in the first quarter of every year and then the remaing quarters have an even divide of the remaining positions for the year. The spikes, that takes place in first quarter, account for approximately 60% of all jobs filled in each year. Another clear trend is that the number of positions filled each year has been increasing. However, the pattern we see from 2015 through 2019 abruptly changes in 2020 when COVID-19 begins spreading. Suddenly, a lot more positions have been filled in the second quarter compared to the previous years and the increasing trend appears to have stopped.</p>
+<p>Since I only have data for the first three quarters of 2020, I will now verify that hiring has slowed down by looking at the total jobs hired for the first three quarters of the year.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237367/Website%20Project%20Photos/dataScienceHiringPatterns/barCharJobsFilledByYearQ1throughQ3_zr1tiu.png" alt="" title="bar 2"></p>
+<p>This last plot confirms that hiring is slightly down, ending the increasing pattern in positions. As someone hoping to land my first data science job, I would like to know how this is affecting early career positions. I would assume just knowing that positions are down, that early career positions are harmed the most when the number of positions goes down based on the fact that early career positions require more training and mentorship than senior positions do.</p>
+<h2 id="salary">Salary</h2>
+<p>To obtain more insight on what happened in 2020, let&rsquo;s start by taking a look at a box plot of salaries to get an idea of how well data scientists are paid.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237371/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalary_puvby1.png" alt="" title="bw 1"></p>
+<p>So the first quartile is 83k, the median is 104k and the third quartile is 133k. Now let&rsquo;s break this down by year and see how salaries have been changing.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237374/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYear_lnngla.png" alt="" title="bw 2"></p>
+<p>In summary, from 2015 to 2016, the salaries went down in every quartile. Then salaries went up and remained steady from 2017 to 2018. Then an increasing trend appears where between 1 and 3 thousand dollars is added to the quartiles each year through 2020. It&rsquo;s difficult to look at these plots and say that anything strange happened. The small increases from 2019 to 2020 seems insignificant. However, please recall that 2020 is still missing it&rsquo;s 4th quarter which might be affecting the values of the quartiles.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237373/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalariesByYearAndQuarter_olgjpj.png" alt="" title="bw 3"></p>
+<p>There&rsquo;s a lot of information to make sense of in this last plot. First I would like to point out that the positions filled in 4th quarter tends to have a higher salary compared to earlier quarters, which means that the quartiles for 2020 in the previous plot are most likely lower than they should be.</p>
+<p>Second, salaries in the first quarter of each year appear to be when salaries are at the lowest. I would interpret this to mean that the first quarter is when the most early career positions are filled. In 2020, however, the quartiles for salaries in the first quarter look much higher than the first quarters of previous years possibly indicating that this didn&rsquo;t happen. It might be difficult to see, so we&rsquo;ll take a closer look shortly.</p>
+<p>Third, the quartiles in the second quarter of 2020 are much lower than the quartiles in the first quarter. This probably means that the early carerer positions that were traditionally filled in the first quarter were most likely pushed into the second quarter. We&rsquo;ll examine these quarters after we visit the first quarter plots.</p>
+<p>Now, let&rsquo;s turn our focus back onto the first quarter of each year and confirm the sharp uptick in salaries.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237376/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYearAndQ1_tj76o1.png" alt="" title="bw 4"></p>
+<p>Now it should be easier to see that quartiles of salaries in the first quarter of 2020 are higher than in the first quarter of previous years by approxcimately 10k each.</p>
+<p>The most likely cause of this disruption is that the impact COVID-19 created uncertainty on how it would impact business and the training of new employeers. Now Let&rsquo;s examine the second quarters of each year and see how different it was from previous years:</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237369/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalariesByYearAndQ2_kiw9nw.png" alt="" title="bw 5"></p>
+<p>Here we can see that the quartiles in the second quarter of 2020 are all down by about 13k compared to previous years. This appears to confirm that more early career positions were filled in this quarter. Since 2020 split a lot of positions between the first and second quarter, let&rsquo;s now combine the first and second quarter of each year and see how different the years appear.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237373/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByQ1throughQ2_pvmdxh.png" alt="" title="bw 6"></p>
+<p>With the two quarters combined we can see that the salary distribution for the combined first and second quarter in 2020 is still up compared to previous years by about 4k or more in each of the quartiles. Now let&rsquo;s combine all three quarters and see how the years compare. This way we are comparing the complete information of all years.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237377/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYearAndQ1ThroughQ3_xb0n7v.png" alt="" title="bw 7"></p>
+<p>We still see that the distribution for 2020 is up by about 4k in the first quartile, median, and third quartile compared to past years. If the slow down in hiring and the increase in salaries were the only variables that changed, then I would feel comfortable concluding that early career positions were hit the hardest by COVID-19. However, I also have information on location and which companies have been hiring so let&rsquo;s explore this data to see what&rsquo;s been changing here.</p>
+<h2 id="locations">Locations</h2>
+<p>Let&rsquo;s first take a look at the distribution of salaries by states and the total number of jobs by states in each state.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237378/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByState_qctnw1.png" alt="" title="bw 8"></p>
+<p>Note that the median salary in California, Washington, and New York are above the median income of data scientists as a whole. Idaho is close but, as we&rsquo;re about to see, it doesn&rsquo;t have that many positions so it won&rsquo;t have a huge effect on the quantiles.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237370/Website%20Project%20Photos/dataScienceHiringPatterns/barChartStateEmployment_mpvjid.png" alt="" title="bar 3"></p>
+<p>Now let&rsquo;s take a look at how the share of hiring by state has changed over the years.</p>
+<p>2015:
+<img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237384/Website%20Project%20Photos/dataScienceHiringPatterns/pieChartLocations2015_omnqiu.png" alt="" title="pie 1"></p>
+<p>2016:
+<img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237383/Website%20Project%20Photos/dataScienceHiringPatterns/pieChartLocations2016_obkow6.png" alt="" title="pie 2"></p>
+<p>2017:
+<img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237384/Website%20Project%20Photos/dataScienceHiringPatterns/pieChartLocations2017_cr12r7.png" alt="" title="pie 3"></p>
+<p>2018:
+<img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237385/Website%20Project%20Photos/dataScienceHiringPatterns/pieChartLocations2018_tjcyhv.png" alt="" title="pie 4"></p>
+<p>2019:
+<img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237386/Website%20Project%20Photos/dataScienceHiringPatterns/pieChartLocations2019_mgz8o9.png" alt="" title="pie 5"></p>
+<p>2020:
+<img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237388/Website%20Project%20Photos/dataScienceHiringPatterns/pieChartLocations2020_hloadj.png" alt="" title="pie 6"></p>
+<p>Note that California&rsquo;s, New York&rsquo;s, and Washington&rsquo;s share of the data scientists hired each year has been steadily shrinking. In total, the percentage has gone from 71% of all positions in 2015 to 56% of all positions in 2020. Given that the salaries in other states are typically lower, one would expect that the salary quartiles would be going down. We know that wasn&rsquo;t the case which I believe further credits the hypothesis that early career positions were hurt the most in 2020. Now let&rsquo;s take a look at the companies that hire the most data scientists and see how trends have been changing there.</p>
+<h2 id="big-companies">Big Companies</h2>
+<p>Let&rsquo;s start by exploring the salaries of data scientists at the companies that hire the most data scientists.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237373/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByTop10Employer_q4orzd.png" alt="" title="bw employer 1"></p>
+<p>Note that all of these companies, except IBM, have median salaries that are considerably higher the median salary of data scientists as a whole. In fact, seven of them have first quartiles that are much larger than the median of data scientists as a whole. They also account for almost 20% of all data scientists. A disruption in hiring at these companies would certainly have a noticeable affect on salaries in 2020. Therefore, I blieve it&rsquo;s worth investigating how these salaries have changed over time.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612248963/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYearTop10Employers_iaqpvd.png" alt="" title="bw employer 2"></p>
+<p>These box plots show that the companies that hire the most data scientists have steadily been raising the salaries of their newest employees each year. 2020 in particular saw the largest increase in the median salary of their newest data scientists, with all quartiles up by 10k compared to the previous year. Now let&rsquo;s take a look at how many positions were filled in the first three quarters of each year.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237376/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYearAndQ1ThroughQ3Top10Employers_tnysht.png" alt="" title="bw employer 3"></p>
+<p>In this plot we can see that just like that just like the economy as a whole, the number of Data Science positions filled was increasing rapidly until we get to 2020 where there is only a slight increase. Now you might be wondering if the hiring patterns for the top 10 companies matches the hiring pattern of all employers.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237371/Website%20Project%20Photos/dataScienceHiringPatterns/barChartJobGrowthByYearAndQuarterTop10Employers_xoe5zj.png" alt="" title="bar employer 1"></p>
+<p>As we can see the pattern matches what we saw earlier. Most positions were filled in the first quarter and this was also when salaries were at their lowest. Let&rsquo;s see if that pattern continues here too.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237384/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYearAndQuarterTop10Employers_wxt4hu.png" alt="" title="bw employer 4"></p>
+<p>Just as before, the salaries the distribution of salaries is lowest during the first quarter of each year and then higher for each quarter afterwards. It also appears that the salaries have been steadily increasing. Let&rsquo;s investigate this further by comparing the salaries only in the first quarter.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237380/Website%20Project%20Photos/dataScienceHiringPatterns/boxPlotSalaryByYearAndQ1Top10Employers_akofsl.png" alt="" title="bw employer 5"></p>
+<p>What&rsquo;s interesting to note here is that the first quartile and median salaries of positions in 2020 are up by 10k compared to 2019 but even 2019 saw 7k, 7k, and 15k, increases in the first quartile, median, and third quartile compared to 2018, respectively.</p>
+<p>So maybe the largest companies that hire data scientists fill or create as many early career positions  as they had in previous years. If enough larger data science companies continued this pattern, then maybe this is the reason that salaries are up in 2020.</p>
+<h2 id="2020-projections">2020 Projections</h2>
+<p>I&rsquo;d like to consider what might have happened if COVID-19 never happened. Specifically, I would like to know what the job growth for data scientists might have looked like? To answer this question, a SARIMA model will be fit to the total jobs filled in each quarter from 2015 through 2018 as a training set. The quarters in 2019 will be used as a validation set and the quarters in 2020 will be the test set. If the results seem reasonable, then projections will be made.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237388/Website%20Project%20Photos/dataScienceHiringPatterns/SarimaModelValidationAndTest_fdjuct.png" alt="" title="SARMIA 1"></p>
+<p>The results of the SARIMA model are as follows. On the training set the model achieves an RMSE of 175.2, on the validation set the RMSE is 88.6, and on the test set the RMSE is 899.5. So the model performs well on the validation set and doesn&rsquo;t do well on the test set. Since the model appears to capture the trend well, I&rsquo;m going to assume that the projection into 2020 is fairly accurate. Therefore, if COVID-19 never happened, then the number of jobs in the first three quarters of 2020 should have totaled 4,462, which is 26.1% more than the 3,538 jobs that were filled. Note, that even when the training data is updated to include 2019, the model&rsquo;s forecast does not change very much.</p>
+<p><img src="https://res.cloudinary.com/skylartrigueiro/image/upload/v1612237387/Website%20Project%20Photos/dataScienceHiringPatterns/SarimaModelTest_zazdol.png" alt="" title="SARIMA 2"></p>
+<p>In this case the model achieves an RMSE of 162.1 on the training set and an RMSE of 919.4. on the test set. The projection for 2020 changes to 4,506, which is 27.4% more than the the actual number of jobs filled.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Based on this evidence presented in this data, I would argue that if COVID-19 never happened, then 26-27% more positions would have been created based on model projections. Second, the positions that weren&rsquo;t created or filled were most likely early career positions based on the shift in the quartiles of salaries in 2020 compared to previous years. This trend seems to be especially prevalent among larger tech companies.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p>The data used for this analysis was scraped from h1bdata.info</p>
+</li>
+<li>
+<p>The scraper used was cloned from this github repositoryhttps://github.com/mingen-pan/Scraping-H1B-visa-info by Mingen Pan.</p>
+</li>
+</ol>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:Skylar.Trigueiro@gmail.com">Skylar.Trigueiro@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+                  <div uk-lightbox>
+                    <a href="https://www.google.com/maps/place/San&#43;Francisco&#43;Bay&#43;Area,&#43;CA/@37.8738836,-123.5414908,8z/data=!3m1!4b1!4m5!3m4!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078" data-caption="San Francisco Bay Area, CA"
+                      data-type="iframe">San Francisco Bay Area, CA</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+    2020
+    Skylar Trigueiro
+
+
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

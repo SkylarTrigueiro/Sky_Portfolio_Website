@@ -244,7 +244,7 @@
 
 <section>
   <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
-    <h1 class="uk-text-center uk-heading-medium">Stock Algorithmic Trading (Work in Progress)</h1>
+    <h1 class="uk-text-center uk-heading-medium">Algorithmic Stock Trading (Work in Progress)</h1>
     <p class="uk-text-center uk-text-lead">Reinforcement Learning model applied to stock algorithmic trading.</p>
     <p class="uk-text-center">Published on Nov 19, 2020</p>
     <p class="uk-text-center">Reading time: 1 minutes.</p>
@@ -271,9 +271,9 @@
 
     <div class="content">
       <h1 id="algorithmic-trading-work-in-progress">Algorithmic Trading (Work in progress)</h1>
-<p>This project is about trying to develop an intelligent way of following stock market trends to improve returns compared to buying and holding onto stock. I will specifically try to maximize returns from the S&amp;P 500.</p>
+<p>This project is about trying to develop an intelligent way of following stock market trends to improve returns compared to buying and holding onto stock. However, I seem to have shown that it&rsquo;s easier and better to simply buy stock and hold stock than it is to try and time the market.</p>
 <h2 id="data">Data</h2>
-<p>I will use the performance of large market cap companies contained in the S&amp;P 500 order to assist in trend prediction. To gather data for all of the stock I need, I used a web scraper to scrape the wikipedia page of the S&amp;P 500 and the python package yfinance to collect financial data and recover the adjusted closing price for a user defined range of dates that can be defined in config.py.</p>
+<p>I will use the performance of large companies contained in the S&amp;P 500 to predict trends. The names of the stock in the S&amp;P 500 were obtained using a web scraper. The financial data was collected using the python package yfinance. The adjusted closing price of the chosen sample of stock is used to make predictions and the chosen stock can be changed in the config.py file.</p>
 <h2 id="references">References</h2>
 <ol>
 <li>This project started as a project in the Udemy course &ldquo;Financial Engineering and Artificial Intelligence in Python&rdquo;, which I highly recommend.</li>
